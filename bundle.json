@@ -25,10 +25,26 @@
             "sub_component": [],
             "inner_kits": [
                 {
-                    "name": "//third_party/lz4:liblz4_static"
+                    "name": "//third_party/lz4:liblz4_static",
+                    "header": {
+                        "header_base": "//third_party/lz4/lib",
+                        "header_files": [
+                            "lz4.h",
+                            "lz4hc.h",
+                            "lz4frame.h"
+                        ]
+                    }
                 },
                 {
-                    "name": "//third_party/lz4:liblz4_shared"
+                    "name": "//third_party/lz4:liblz4_shared",
+                    "header": {
+                        "header_base": "//third_party/lz4/lib",
+                        "header_files": [
+                            "lz4.h",
+                            "lz4hc.h",
+                            "lz4frame.h"
+                        ]
+                    }
                 }
             ],
             "test": []
